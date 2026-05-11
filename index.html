@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaid Ghouri | Software Engineer</title>
+    <meta name="description"
+        content="Portfolio of Zaid Ghouri, Computer Science final-year student skilled in Python, C++, Flask, React, and Flutter.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="networkCanvas"></canvas>
+
+    <nav class="navbar hidden-onload">
+        <div class="logo">ZG.</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-close">About</a></li>
+            <li><a href="#experience" class="nav-close">Experience</a></li>
+            <li><a href="#projects" class="nav-close">Projects</a></li>
+            <li><a href="#skills" class="nav-close">Skills</a></li>
+            <li><a href="#contact" class="nav-close">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="resume_ZaidGhouri.pdf" target="_blank" class="btn-resume" id="resumeBtn">Resume ↗</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <span class="greeting animate-up" style="--delay: 0.2s">Hello, I'm</span>
+                <h1 class="animate-up" style="--delay: 0.4s">Zaid Ghouri</h1>
+                <h2 class="animate-up" style="--delay: 0.6s">Software Engineer &amp; AI Enthusiast</h2>
+                <p class="animate-up" style="--delay: 0.8s">Computer Science final-year student with professional
+                    internship experience in full-stack web development. Passionate about building intelligent, scalable
+                    solutions.</p>
+                <div class="hero-actions animate-up" style="--delay: 1.0s">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="resume_ZaidGhouri.pdf" target="_blank" class="btn-secondary">Download Resume ↗</a>
+                    <a href="https://github.com/ZaidGhouri04" target="_blank" class="btn-secondary">GitHub</a>
+                    <a href="https://www.linkedin.com/in/zaid-ghouri-b5bb382b8/" target="_blank"
+                        class="btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-fade">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content glass-card">
+                <div class="education-info">
+                    <h3>Education</h3>
+                    <h4>National University of Computer and Emerging Sciences (FAST-NUCES)</h4>
+                    <p class="date">Aug 2022 – Jul 2026 &nbsp;|&nbsp; Peshawar, Pakistan</p>
+                    <p class="degree">Bachelor of Science in Computer Science</p>
+                    <p class="coursework"><strong>Relevant Coursework:</strong> Object-Oriented Programming, Data
+                        Structures and Algorithms, Database Systems, Operating Systems, Programming Fundamentals,
+                        Artificial Intelligence</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience section-fade">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline glass-card">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>IT Intern — Web Development</h3>
+                        <h4>Pak-Qatar Family Takaful Limited</h4>
+                        <p class="date">2025 | Karachi, Pakistan</p>
+                        <ul>
+                            <li>Developed and maintained web-based internal tools using Oracle APEX, contributing to the
+                                IT department's digital workflow automation.</li>
+                            <li>Built and customized interactive web pages and forms within Oracle APEX to streamline
+                                data entry and reporting for business operations.</li>
+                            <li>Collaborated with senior IT staff to gather requirements, implement UI changes, and
+                                ensure smooth deployment of web modules.</li>
+                            <li>Gained hands-on experience with enterprise-level database-driven web development in a
+                                financial services environment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-fade">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Flask</span><span>Python</span><span>Flutter</span><span>Firebase</span>
+                        </div>
+                        <h3>TasteTalk: Smart Voice Bot</h3>
+                        <p>Developed an end-to-end AI voice agent using Flask backend to process natural Urdu voice
+                            commands for food ordering, achieving 90% speech recognition accuracy. Integrated Google
+                            Speech Recognition and Flutter TTS to enable real-time, bidirectional voice interaction.</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Python</span><span>OOP</span>
+                        </div>
+                        <h3>Bank Management System</h3>
+                        <p>Developed a fully functional console-based banking application implementing core OOP
+                            principles (encapsulation, inheritance, polymorphism) to manage accounts, transactions, and
+                            balance checks.</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Python</span><span>NumPy</span><span>Neural Networks</span>
+                        </div>
+                        <h3>Handwritten Digit Classifier</h3>
+                        <p>Built a multi-layer neural network from scratch without deep learning frameworks; trained and
+                            evaluated on the MNIST dataset to classify digits 0–9.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-fade">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category glass-card">
+                    <h3>Languages</h3>
+                    <div class="skill-chips">
+                        <span>Python</span><span>C++</span><span>C</span><span>Dart</span><span>JavaScript</span><span>PHP</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-chips">
+                        <span>HTML</span><span>CSS</span><span>React</span><span>Flask</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Frameworks &amp; Tools</h3>
+                    <div class="skill-chips">
+                        <span>Flutter</span><span>NumPy</span><span>Pandas</span><span>Git</span><span>VS Code</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Databases &amp; Enterprise</h3>
+                    <div class="skill-chips">
+                        <span>MySQL</span><span>Firebase</span><span>Oracle APEX</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-fade">
+            <div class="contact-box glass-card">
+                <h2>Get In Touch</h2>
+                <p>I'm currently seeking opportunities to apply full-stack and AI development skills in a professional
+                    software engineering role. Whether you have a question or just want to say hi, I'll try my best to
+                    get back to you!</p>
+                <div class="contact-links">
+                    <a href="mailto:ghorizaid11@gmail.com" class="btn-primary">Say Hello</a>
+                    <a href="resume.pdf" target="_blank" class="btn-secondary">Download Resume</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed &amp; Built by Zaid Ghouri &nbsp;·&nbsp; <a
+                href="mailto:ghorizaid11@gmail.com">ghorizaid11@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
